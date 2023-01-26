@@ -124,6 +124,10 @@ li {
     background-color: #0E3B6C;
 }
 
+.btn:active::after {
+    opacity: 0;
+}
+
 .descr {
     font-weight: 400;
     font-size: 16px;
@@ -284,12 +288,8 @@ li {
 
 .services__list-item {
     padding: 62px 30px;
-    min-height: 320px;
-    min-width: 270px;
     flex-basis: 320px;
     flex-direction: column;
-    align-content: center;
-    justify-content: center;
     text-align: center;
     border: 1px solid #E4E4E4;
     border-radius: 5px;
@@ -306,6 +306,7 @@ li {
 }
 
 .services__list-descr {
+    margin: 0;
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
@@ -445,7 +446,6 @@ li {
 .articles__blog-preview:active .articles__descr {
     color: #fff;
 }
-
 
 /* Clients */
 
