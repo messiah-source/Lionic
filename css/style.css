@@ -97,6 +97,7 @@ li {
     line-height: 20px;
     color: #FFFFFF;
     outline: none;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .btn:hover {
@@ -114,6 +115,7 @@ li {
     border-radius: inherit;
     border: 1px solid #71A7E2;
     opacity: 0;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .btn:focus::after {
@@ -168,6 +170,11 @@ li {
     border-radius: 3px;
 }
 
+.header__item-link {
+    transition: outline 0.3s ease-in-out,
+        color 0.3s ease-in-out;
+}
+
 .header__item-link:focus {
     outline-offset: 2px;
     outline: 1px solid #71A7E2
@@ -186,6 +193,7 @@ li {
     height: 2px;
     background-color: #3172B9;
     opacity: 0;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .header__item-link:active {
@@ -747,6 +755,8 @@ li {
 
 .footer__item-link {
     position: relative;
+    transition: outline 0.3s ease-in-out,
+        color 0.3s ease-in-out;
 }
 
 .footer__item-link:focus {
@@ -767,6 +777,7 @@ li {
     height: 2px;
     background-color: #3172B9;
     opacity: 0;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .footer__item-link:active {
@@ -788,8 +799,14 @@ li {
     padding: 0;
 }
 
+.social__link {
+    outline: none;
+}
+
 .social__link svg {
     fill: #000;
+    transition: fill 0.3s ease-in-out,
+        outline 0.3s ease-in-out;
 }
 
 .social__mail-icon svg {
@@ -804,6 +821,10 @@ li {
 
 .social__link:hover svg {
     fill: #71A7E2;
+}
+
+.social__mail-icon svg {
+    transition: stroke 0.3s ease-in-out;
 }
 
 .social__mail-icon:hover svg {
